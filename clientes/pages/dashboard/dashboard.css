@@ -1,0 +1,253 @@
+/* Custom Properties */
+:root {
+    --bg-first-color: #d9d9d9;
+    --bg-second-color: #C6AA33;
+    --bg-select-color: #f2f2f2;
+}
+
+/* Reset Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+/* Bootstrap Styles */
+.border-warning {
+    border-color: #C6AA33 !important;
+}
+
+.navbar {
+    height: 110px;
+}
+
+.navbar-brand {
+    margin: 0 1rem 0 0;
+}
+
+
+.table {
+    margin-bottom: 0;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 64px;
+}
+
+
+/* My Styles */
+.container-form {
+    width: 500px;
+}
+
+.btn-logout {
+    background-color: #DC3434;
+    color: var(--bg-select-color);
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 176px;
+    width: 100%;
+}
+
+.btn-logout:hover,
+.btn-logout:active {
+    background-color: #fff !important;
+    color: #DC3434 !important;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.container--btns {
+    height: 123px;
+}
+
+
+.btn--add {
+    background-color: var(--bg-second-color) !important;
+    border-color: var(--bg-second-color) !important;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: var(--bg-select-color);
+    padding: 10px 20px;
+    width: 184px;
+}
+
+.btn--add:hover,
+.btn--add:active {
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: var(--bg-second-color) !important;
+}
+
+.btn--add {
+    height: fit-content;
+}
+
+.table--data {
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.table--data tr {
+    height: 56px;
+}
+
+.table--data th {
+    font-weight: 500;
+}
+
+.table--data th,
+.table--data td {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-left: 16px;
+}
+
+.table--data td {
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+/*Cards hover*/
+
+.card-plans {
+    background-color: var(--bg-second-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.25);
+    width: 280px;
+    height: 407px;
+}
+
+.card-plans--beginner:hover {
+    background-color: #FFFFFF;
+}
+
+.card-plans--beginner:hover .card-body {
+    color: var(--bg-second-color) !important;
+}
+
+.card-plans--beginner:hover .btn--acquire {
+    background-color: var(--bg-second-color);
+    color: #FFFFFF !important;
+}
+
+.card-plans--beginner:hover .d-none {
+    display: block !important;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.card-plans--beginner:hover .card-text--beginner {
+    display: none !important;
+}
+
+.btn--acquire {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    color: var(--bg-second-color) !important;
+    height: 50px;
+    width: 138px;
+}
+
+/*Cards hover*/
+
+.card-paragraph {
+    font-size: 12px;
+}
+
+.form-select--field {
+    color: var(--bg-second-color);
+    height: 48px;
+    width: 181px;
+    appearance: none !important;
+}
+
+
+select+i.bi {
+    color: var(--bg-second-color);
+    float: right;
+    margin-top: -34px;
+    margin-right: 8px;
+    pointer-events: none;
+    padding-right: 5px;
+}
+
+.form-select--field:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.container-btn--acquire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.25), 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+    background: var(--bg-second-color);
+    margin-top: auto;
+    height: 240px;
+}
+
+.network-list {
+    list-style: none;
+    gap: 24px;
+}
+
+.network-list li {
+    height: 35px;
+}
+
+.network-list a,
+.info-list a {
+    color: #fff;
+}
+
+.info-list {
+    margin-bottom: 80px;
+}
+
+
+
+
+@media (min-width: 460px) {
+    .container-fluid {
+        flex-wrap: nowrap !important;
+        justify-content: space-around !important;
+    }
+
+    .container--btns {
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media (min-width: 515px) {
+    .container-fluid {
+        justify-content: space-between !important;
+    }
+
+
+}
+
+
+@media (min-width: 1000px) {
+    .btn-logout {
+        width: 328px;
+    }
+}
